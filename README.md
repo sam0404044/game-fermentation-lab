@@ -2,11 +2,11 @@
 
 遊戲發酵室 `Game Fermentation Lab` 官方網站原型。
 
-這是一個使用 `Next.js` 與 `Tailwind CSS` 製作的單頁式品牌網站，網站定位介於議題型遊戲品牌、創意實驗室與社群內容品牌之間，包含品牌介紹、專案展示、開發流程與 YouTube 入口。
+這是一個使用 `Next.js` 與 `Tailwind CSS` 製作的單頁式品牌網站，定位介於議題型遊戲品牌、創意實驗室與社群內容品牌之間，包含品牌介紹、專案展示、開發流程與 YouTube 入口。
 
 ## 專案特色
 
-- 現代、乾淨、低彩度的淺藍品牌視覺
+- 淺藍、低彩度、輕盈發光感的品牌視覺
 - Hero 主視覺與 12 張專案封面圖
 - 單頁式 section navigation
 - React / Next.js 元件化架構
@@ -53,26 +53,39 @@ public/images/        網站使用的靜態圖片
 
 ## GitHub Pages 部署
 
-這個專案已設定為部署到：
+目前 GitHub Pages 預設部署網址：
 
 ```text
 https://sam0404044.github.io/game-fermentation-lab/
 ```
 
-部署方式：
+目前專案採用 GitHub Actions 自動部署：
 
 1. 推送到 `main`
-2. GitHub Actions 會自動執行
+2. GitHub Actions 自動執行
 3. 產出靜態網站到 `out/`
 4. 自動部署到 GitHub Pages
 
-Pages 相關設定已包含：
+Pages 相關設定：
 
 - `output: "export"`
 - `trailingSlash: true`
-- `basePath: "/game-fermentation-lab"`
-- `assetPrefix: "/game-fermentation-lab/"`
 - `images.unoptimized: true`
+
+## 自訂網域
+
+目前規劃接上：
+
+```text
+www.playferment.com
+```
+
+Cloudflare DNS 建議：
+
+- `CNAME` `www` -> `sam0404044.github.io`，使用 `DNS only`
+- `CNAME` `@` -> `sam0404044.github.io`，使用 `DNS only`
+
+當 GitHub Pages 驗證完成後，可在 Pages 設定中啟用 `Enforce HTTPS`。
 
 ## 主要檔案
 
@@ -80,7 +93,7 @@ Pages 相關設定已包含：
 - `components/hero-section.tsx`：Hero 區塊
 - `components/projects-section.tsx`：專案展示
 - `data/projects.ts`：12 筆專案資料
-- `next.config.ts`：GitHub Pages 部署設定
+- `next.config.ts`：部署設定
 
 ## 備註
 
