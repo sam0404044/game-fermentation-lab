@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: official website hero illustration
+Primary request: A premium soft illustration for the official website of "Game Fermentation Lab", a creative studio making issue-based social games.
+Scene/background: a light blue airy laboratory world with bubbles, translucent glass panels, floating interface fragments, and subtle social interaction symbols
+Subject: a translucent white jelly slime mascot floating at the center as the visual anchor
+Style/medium: polished editorial brand illustration for a modern website
+Composition/framing: wide hero composition with negative space, elegant layered depth, suitable for a landing page
+Lighting/mood: soft glow, gentle highlights, clean and dreamy, lightweight atmosphere
+Color palette: low saturation pastel blue, misty white, soft cyan, subtle silver-blue accents
+Materials/textures: jelly translucency, glassmorphism, glossy bubbles, soft matte background
+Constraints: no text, no watermark, no dark background, no childish cartoon style, no clutter
+Avoid: cyberpunk, saturated neon, heavy contrast, busy composition, realistic humans

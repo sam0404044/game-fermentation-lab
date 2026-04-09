@@ -1,0 +1,8 @@
+node_modules
+.next
+.env
+.env.local
+output/imagegen
+minimal-next-smoke/node_modules
+minimal-next-smoke/.next
+*.log

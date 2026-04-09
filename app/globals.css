@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef7ff;
+  --background-soft: #f7fbff;
+  --foreground: #23425d;
+  --muted: #67839b;
+  --line: rgba(127, 173, 210, 0.32);
+  --line-strong: rgba(99, 154, 204, 0.52);
+  --panel: rgba(255, 255, 255, 0.58);
+  --panel-strong: rgba(255, 255, 255, 0.78);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(218, 237, 255, 0.95), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(204, 232, 255, 0.9), transparent 24%),
+    linear-gradient(180deg, var(--background-soft) 0%, var(--background) 52%, #f9fcff 100%);
+  font-family:
+    "Noto Sans TC",
+    "Segoe UI",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-shell {
+  position: relative;
+  overflow: clip;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--line);
+  box-shadow:
+    0 24px 64px rgba(123, 169, 208, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+}
+
+.dark-button {
+  color: rgba(248, 252, 255, 0.96);
+}
+
+.dark-button:hover,
+.dark-button:visited,
+.dark-button:focus-visible {
+  color: rgba(248, 252, 255, 0.96);
+}
+
+.section-anchor {
+  scroll-margin-top: 96px;
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.float-delay {
+  animation: floatSlow 8.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px solid rgba(160, 202, 235, 0.4);
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.85), rgba(218, 239, 255, 0.22) 60%, rgba(218, 239, 255, 0.05) 100%);
+  box-shadow:
+    inset 0 1px 10px rgba(255, 255, 255, 0.35),
+    0 0 28px rgba(174, 214, 255, 0.25);
+}
+
+.bubble-grid {
+  background-image:
+    linear-gradient(to right, rgba(151, 188, 219, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(151, 188, 219, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
