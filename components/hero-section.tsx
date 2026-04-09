@@ -2,14 +2,14 @@ import Image from "next/image";
 
 function BubbleCluster() {
   return (
-    <div className="relative h-[560px] w-full sm:h-[620px] md:h-[520px]">
+    <div className="relative h-[560px] w-full sm:h-[620px] lg:h-[520px]">
       <div className="bubble bubble-grid left-[8%] top-[8%] h-24 w-24 float-slow md:h-32 md:w-32" />
       <div className="bubble right-[6%] top-[16%] h-14 w-14 float-delay md:h-20 md:w-20" />
       <div className="bubble bottom-[14%] left-[14%] h-20 w-20 float-delay md:h-24 md:w-24" />
       <div className="bubble bottom-[6%] right-[18%] h-16 w-16 float-slow md:h-20 md:w-20" />
 
-      <div className="glass-panel absolute inset-x-0 top-4 mx-auto w-[96%] rounded-[2rem] p-4 shadow-[0_20px_80px_rgba(139,180,214,0.18)] sm:top-6 sm:w-[94%] sm:p-5 md:top-14 md:w-[82%] md:p-8">
-        <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr] md:gap-6">
+      <div className="glass-panel absolute inset-x-0 top-4 mx-auto w-[96%] rounded-[2rem] p-4 shadow-[0_20px_80px_rgba(139,180,214,0.18)] sm:top-6 sm:w-[94%] sm:p-5 lg:top-14 lg:w-[82%] lg:p-8">
+        <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr] lg:gap-6">
           <div className="rounded-[1.5rem] border border-white/60 bg-white/45 p-5">
             <div className="mb-4 flex items-center justify-between">
               <span className="rounded-full border border-sky-200 bg-white/80 px-3 py-1 text-xs text-sky-800">
@@ -34,11 +34,11 @@ function BubbleCluster() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-[1.5rem] border border-white/60 bg-linear-to-b from-white/65 to-sky-50/70 p-2 md:min-h-[220px]">
+          <div className="relative overflow-hidden rounded-[1.5rem] border border-white/60 bg-linear-to-b from-white/65 to-sky-50/70 p-2 lg:min-h-[220px]">
             <div className="absolute right-5 top-5 z-10 rounded-full border border-sky-100 bg-white/82 px-3 py-1 text-xs text-slate-500">
               hero visual
             </div>
-            <div className="relative h-[260px] overflow-hidden rounded-[1.2rem] md:h-full md:min-h-[220px]">
+            <div className="relative h-[260px] overflow-hidden rounded-[1.2rem] lg:h-full lg:min-h-[220px]">
               <Image
                 src="/images/hero/game-fermentation-lab-hero.png"
                 alt="Game Fermentation Lab hero visual"
@@ -59,7 +59,7 @@ function BubbleCluster() {
 export function HeroSection() {
   return (
     <section id="top" className="px-4 pb-20 pt-10 md:px-6 md:pb-20 md:pt-16">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="fade-up">
           <span className="mb-5 inline-flex rounded-full border border-sky-200/80 bg-white/70 px-4 py-2 text-sm text-sky-800 shadow-sm">
             議題型遊戲品牌 / 創意實驗室 / 社群內容入口
