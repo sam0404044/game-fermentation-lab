@@ -3,6 +3,7 @@ node_modules
 .env
 .env.local
 output/imagegen
+out
 minimal-next-smoke/node_modules
 minimal-next-smoke/.next
 *.log
